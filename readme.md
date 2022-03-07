@@ -1,6 +1,6 @@
 # Project Setup
-
-[![Development Workflow](https://github.com/DivyaGabani/final_docker_flask/actions/workflows/dev.yml/badge.svg)](https://github.com/DivyaGabani/final_docker_flask/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/DivyaGabani/dockerFlaskProject1/actions/workflows/dev.yml/badge.svg)](https://github.com/DivyaGabani/dockerFlaskProject1/actions/workflows/dev.yml)
+[![Production Workflow](https://github.com/DivyaGabani/dockerFlaskProject1/actions/workflows/prod.yml/badge.svg)](https://github.com/DivyaGabani/dockerFlaskProject1/actions/workflows/prod.yml)
 
 ## Setting up CI/CD
 

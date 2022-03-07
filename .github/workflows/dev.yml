@@ -1,17 +1,12 @@
-name: Run Tests, Build Dockerfile, Run on Heroku
+name: Development Workflow
 
 on:
-  push:
-    branches:
-      - 'master'
-    tags:
-      - 'v*'
   pull_request:
     branches:
       - 'master'
 
 jobs:
-  runtest:
+  run_pytest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,33 +19,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Test with pytest
-        run: pytest --pylint -vv
+        run: pytest -vv
 
-  build-container:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v3
-        with:
-          images: drg5/flaskbase
-
-      - name: Build and push
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -58,6 +28,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "drg5-dockerflask" #Must be unique in Heroku
+          heroku_app_name: "dockerflask-p1-dev" #Must be unique in Heroku
           heroku_email: "drg5@njit.edu"
           usedocker: true
