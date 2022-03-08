@@ -34,7 +34,7 @@ def test_html_page(client):
     """This makes the flask page"""
     response = client.get("/html1")
     assert response.status_code == 200
-    assert b"HTML" in response.data
+    assert b"Let's take a closer look to CI/CD" in response.data
 
 
 def test_python_page(client):
