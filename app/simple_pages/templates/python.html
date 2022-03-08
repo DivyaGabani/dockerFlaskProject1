@@ -22,61 +22,64 @@
     <div class="row">
         <header class="mb-3">
             <!-- As a link -->
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar navbar-light bg-dark fixed-top">
                 <div class="container-fluid ">
-                    <h1>TECH</h1>
                     <a class="nav-link" aria-current="page" href="/">Home</a>
-                    <a class="nav-link" aria-current="page" href="/html1">HTML</a>
-                    <a class="nav-link" aria-current="page" href="/git">Git</a>
                     <a class="nav-link" aria-current="page" href="/docker">Docker</a>
-                    <a class="nav-link active" aria-current="page" href="/python">Python/Flask</a>
-
+                    <a class="nav-link active" aria-current="page" href="/python">Python</a>
+                    <a class="nav-link" aria-current="page" href="/html1">CI/CD</a>
+                    <a class="nav-link" aria-current="page" href="/git">Git</a>
                 </div>
             </nav>
         </header>
 
         <!-- Begin page content -->
-        <div class="container-fluid">
+        <div class="container-fluid" style="margin-top: 70px;">
             <div class="row">
-                <h4> Let's take a closer look to Python</h4>
                 <div class="col-8">
+                    <h4> Let's take a closer look to Python</h4>
                     <h3 class="mt-5">What is Python? </h3>
-                    <p style="font-size: 22px;">Python is a computer programming language often used to build websites and software, automate
-                        tasks, and conduct data analysis. Python is a general purpose language, meaning it can be used to
-                        create a variety of different programs and isn’t specialized for any specific problems. This versatility,
+                    <p style="font-size: 22px;">Python is a computer programming language often used to build websites
+                        and software, automate
+                        tasks, and conduct data analysis. Python is a general purpose language, meaning it can be used
+                        to
+                        create a variety of different programs and isn’t specialized for any specific problems. This
+                        versatility,
                         along with its beginner-friendliness, has made it one of the most-used programming languages
                         today.</p>
                     <h3 class="mt-5">What is Flask? </h3>
-                    <p style="font-size: 22px;">Flask is a lightweight Python web framework that provides useful tools and features for creating
+                    <p style="font-size: 22px;">Flask is a lightweight Python web framework that provides useful tools
+                        and features for creating
                         web applications in the Python Language. It gives developers flexibility and is an accessible
                         framework for new developers because you can build a web application quickly using only a single
                         Python file. Flask is also extensible and doesn’t force a particular directory structure or
                         require complicated boilerplate code before getting started.</p>
                     <h3 class="mt-5">The layout of the Python Flask Framework </h3>
                     <p>
-                        <ul style="font-size: 22px;">
+                    <ul style="font-size: 22px;">
                         <li>Module Init - required to enable or create the application.</li>
                         <li>Module URL - to store URL of each module</li>
-                        <li>Module Routes and View - To add and display different pages of application depending on the requested URL</li>
-                        <li>Module Templates -  To store different static webpages of application.</li>
-                        </ul>
+                        <li>Module Routes and View - To add and display different pages of application depending on the
+                            requested URL
+                        </li>
+                        <li>Module Templates - To store different static webpages of application.</li>
+                    </ul>
                     </p>
                     <h3 class="mt-5">Effective Python Testing With Pytest</h3>
                     <p>
-                        <ul style="font-size: 22px;">
+                    <ul style="font-size: 22px;">
                         <li>Pytest is a testing framework based on python. It is mainly used to write API test cases.
                         <li>Pytest can run multiple tests in parallel, which reduces the execution time.</li>
-                        <li>Pytest has its own way to detect the test file and test functions automatically, if not mentioned explicitly.</li>
-                        </ul>
+                        <li>Pytest has its own way to detect the test file and test functions automatically, if not
+                            mentioned explicitly.
+                        </li>
+                    </ul>
                     </p>
-
-
-
                 </div>
                 <div class="col">
                     <h3 class="mt-5">Python Syntax Comparison </h3>
-                        <img src="{{ url_for('static', filename='/images/example_python.jpeg') }}"
-                             class="d-block w-100" style="height: 380px;"/>
+                    <img src="{{ url_for('static', filename='/images/example_python.jpeg') }}"
+                         class="d-block" style="height: 380px;"/>
                     <h3 class="mt-5">Area in which Python is used</h3>
                     <ul style="font-size: 22px;">
                         <li>Data analysis</li>
@@ -89,28 +92,18 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous"></script>
-
+        <footer class="bg-light text-center fixed-bottom">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 20px;">
+                © 2022 Copyright:DIVYA GABANI
+            </div>
+        </footer>
         <!-- Optional JavaScript; choose one of the two! -->
-
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
                 crossorigin="anonymous"></script>
-
         <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        -->
         <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
