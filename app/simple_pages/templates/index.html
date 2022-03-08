@@ -18,14 +18,13 @@
 <body>
 <header class="mb-3">
     <!-- As a link -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-dark fixed-top">
         <div class="container-fluid ">
-            <a class="nav-link" href="#">TECH</a>
             <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" aria-current="page" href="/html1">HTML</a>
-            <a class="nav-link" aria-current="page" href="/git">Git</a>
             <a class="nav-link" aria-current="page" href="/docker">Docker</a>
-            <a class="nav-link" aria-current="page" href="/python">Python/Flask</a>
+            <a class="nav-link" aria-current="page" href="/python">Python</a>
+            <a class="nav-link" aria-current="page" href="/html1">CI/CD</a>
+            <a class="nav-link" aria-current="page" href="/git">Git</a>
         </div>
     </nav>
 </header>
@@ -34,24 +33,26 @@
 <!-- Carousel wrapper -->
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <!-- Inner -->
-    <div class="carousel-inner" style="width: 1700px; height: 850px;">
+    <div class="carousel-inner" style="width: 1700px; height: 850px; padding-left: 150px;">
         <!-- Single item -->
         <div class="carousel-item" style="padding-top: 40px;">
-            <img src="{{ url_for('static', filename='/images/html.png') }}" class="d-block w-100"/>
+            <a href="/html1"><img src="{{ url_for('static', filename='/images/cicd.png') }}" class="d-block w-100"/></a>
         </div>
 
         <!-- Single item -->
         <div class="carousel-item active">
-            <img src="{{ url_for('static', filename='/images/docker.png') }}" class="d-block w-100"/>
+            <a href="/docker"> <img src="{{ url_for('static', filename='/images/docker.png') }}" class="d-block w-100"/></a>
         </div>
 
         <!-- Single item -->
         <div class="carousel-item">
-            <img src="{{ url_for('static', filename='/images/python.jpeg') }}" class="d-block w-100"/>
+            <a href="/python"> <img src="{{ url_for('static', filename='/images/python.jpeg') }}"
+                                    class="d-block w-100"/></a>
         </div>
         <!-- Single item -->
         <div class="carousel-item">
-            <img src="{{ url_for('static', filename='/images/github.png') }}" class="d-block w-100"/>
+            <a href="/git"> <img src="{{ url_for('static', filename='/images/github.png') }}"
+                                 class="d-block w-100"/></a>
         </div>
     </div>
     <!-- indicatore -->
@@ -71,16 +72,10 @@
         <div class="col">
             <div class="card" style="width: 25rem; border: none;">
                 <div class="card-body">
-                    <h4 class="card-title">HTML</h4>
-                    <p class="card-text" style="font-size:22px; border: none;">HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, different parts of the content to make it appear a certain way. </p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 25rem; border: none;">
-                <div class="card-body">
                     <h4 class="card-title">Docker</h4>
-                    <p class="card-text" style="font-size:22px;">Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.</p>
+                    <p class="card-text" style="font-size:22px;">Docker is an open platform for developing, shipping,
+                        and running applications. Docker enables you to separate your applications from your
+                        infrastructure so you can deliver software quickly.</p>
                 </div>
             </div>
         </div>
@@ -88,7 +83,19 @@
             <div class="card" style="width: 25rem; border: none;">
                 <div class="card-body">
                     <h4 class="card-title">Python</h4>
-                    <p class="card-text" style="font-size:22px;">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</p>
+                    <p class="card-text" style="font-size:22px;">Python is an interpreted, object-oriented, high-level
+                        programming language with dynamic semantics.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 25rem; border: none;">
+                <div class="card-body">
+                    <h4 class="card-title">CI/CD</h4>
+                    <p class="card-text" style="font-size:22px; border: none;">CI/CD is a method to frequently deliver
+                        apps to customers by introducing automation into the stages of app development. The main
+                        concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous
+                        deployment. </p>
                 </div>
             </div>
         </div>
@@ -96,24 +103,45 @@
             <div class="card" style="width: 25rem; border: none;">
                 <div class="card-body">
                     <h4 class="card-title">GitHub</h4>
-                    <p class="card-text" style="font-size:22px;">GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.</p>
+                    <p class="card-text" style="font-size:22px;">GitHub is a website and cloud-based service that helps
+                        developers store and manage their code, as well as track and control changes to their code.</p>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <h4>Introduction of Myself</h4>
+            <p style="font-size:22px;">Hello Everyone!
+                I am Divya Gabani. I am pursuing Master's in Computer Science. This is my third semester. I have
+                completed my Bachelor's in Computer Applications from India. I have worked with Javascript, Python, SQL,
+                HTML.
+            </p>
+            <p style="font-size:22px;">I have created this website as a part of project 1 for IS601-Web System
+                Development using pychram as IDE,Docker and HEROKU for deploy and manage my flask application.
+                Each technology is explained in detail in particular webpages.
+            </p>
+        </div>
 
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
+</div>
+<footer class="bg-light text-center">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">DIVYA GABANI</a>
+    </div>
+</footer>
+<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
