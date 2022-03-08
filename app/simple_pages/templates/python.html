@@ -18,60 +18,87 @@
 
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <header class="mb-3">
             <!-- As a link -->
             <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/">Home</a>
-                        </li>
-                    </ul>
+                <div class="container-fluid ">
+                    <h1>TECH</h1>
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" aria-current="page" href="/html1">HTML</a>
+                    <a class="nav-link" aria-current="page" href="/git">Git</a>
+                    <a class="nav-link" aria-current="page" href="/docker">Docker</a>
+                    <a class="nav-link active" aria-current="page" href="/python">Python/Flask</a>
+
                 </div>
             </nav>
         </header>
-    </div>
-    <h1>Aboutpage</h1>
-    <div class="row">
-        <div class="col-6">
-            <p><span class="big color">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper
-                ultricies
-                erat vitae volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis
-                egestas. Sed aliquet posuere porta. Nulla sem metus, pharetra vitae ante id, feugiat lobortis velit.
-                Donec
-                mollis eros maximus est viverra venenatis. Donec sed lorem sem. Mauris sit amet pulvinar neque. Nulla
-                facilisi.
-                Vestibulum sit amet maximus eros.
-            </p>
-        </div>
-        <div class="col">
 
-            <p>
-                <span class="big color">S</span>ed sagittis nisl varius, dictum dui vitae, convallis dolor. Nullam
-                fringilla,
-                ligula vitae venenatis venenatis, mi odio tempus purus, eget volutpat mauris mauris quis sapien.
-                Maecenas
-                blandit nunc quis laoreet scelerisque. Nunc vestibulum volutpat purus. Sed id libero et arcu fermentum
-                maximus
-                at nec mi. Morbi dolor odio, rhoncus ut lectus sit amet, imperdiet faucibus justo. Vestibulum elementum
-                mauris
-                nec libero porttitor aliquam. Sed dapibus sit amet purus at rutrum. Duis fermentum at ipsum vel
-                interdum. Fusce
-                ac augue aliquet, posuere mi ut, gravida est. Nulla pharetra, elit laoreet auctor cursus, justo quam
-                suscipit
-                leo, eu semper purus sapien feugiat nisi. Pellentesque a luctus dolor, nec molestie arcu. Nunc semper
-                tincidunt
-                sem, sit amet euismod lacus auctor a. Nam lobortis lorem ex, vel faucibus nunc rutrum vitae. Phasellus
-                et tortor
-                at eros consectetur feugiat vel luctus erat.
-            </p>
+        <!-- Begin page content -->
+        <div class="container-fluid">
+            <div class="row">
+                <h4> Let's take a closer look to Python</h4>
+                <div class="col-8">
+                    <h3 class="mt-5">What is Python? </h3>
+                    <p style="font-size: 22px;">Python is a computer programming language often used to build websites and software, automate
+                        tasks, and conduct data analysis. Python is a general purpose language, meaning it can be used to
+                        create a variety of different programs and isn’t specialized for any specific problems. This versatility,
+                        along with its beginner-friendliness, has made it one of the most-used programming languages
+                        today.</p>
+                    <h3 class="mt-5">What is Flask? </h3>
+                    <p style="font-size: 22px;">Flask is a lightweight Python web framework that provides useful tools and features for creating
+                        web applications in the Python Language. It gives developers flexibility and is an accessible
+                        framework for new developers because you can build a web application quickly using only a single
+                        Python file. Flask is also extensible and doesn’t force a particular directory structure or
+                        require complicated boilerplate code before getting started.</p>
+                    <h3 class="mt-5">The layout of the Python Flask Framework </h3>
+                    <p>
+                        <ul style="font-size: 22px;">
+                        <li>Module Init - required to enable or create the application.</li>
+                        <li>Module URL - to store URL of each module</li>
+                        <li>Module Routes and View - To add and display different pages of application depending on the requested URL</li>
+                        <li>Module Templates -  To store different static webpages of application.</li>
+                        </ul>
+                    </p>
+                    <h3 class="mt-5">Effective Python Testing With Pytest</h3>
+                    <p>
+                        <ul style="font-size: 22px;">
+                        <li>Pytest is a testing framework based on python. It is mainly used to write API test cases.
+                        <li>Pytest can run multiple tests in parallel, which reduces the execution time.</li>
+                        <li>Pytest has its own way to detect the test file and test functions automatically, if not mentioned explicitly.</li>
+                        </ul>
+                    </p>
+
+
+
+                </div>
+                <div class="col">
+                    <h3 class="mt-5">Python Syntax Comparison </h3>
+                        <img src="{{ url_for('static', filename='/images/example_python.jpeg') }}"
+                             class="d-block w-100" style="height: 380px;"/>
+                    <h3 class="mt-5">Area in which Python is used</h3>
+                    <ul style="font-size: 22px;">
+                        <li>Data analysis</li>
+                        <li>machine learning</li>
+                        <li>Web development</li>
+                        <li>Automation or scripting</li>
+                        <li>Software testing</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
