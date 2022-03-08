@@ -1,7 +1,7 @@
 """This test the homepage"""
 
 
-def test_request_main_menu_links(client):
+def test_main_menu_links(client):
     """This makes the index page"""
     response = client.get("/")
     assert response.status_code == 200
@@ -15,7 +15,7 @@ def test_request_example(client):
     """This makes the index page"""
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Welcome to Home Page" in response.data
+    assert b"Home Page" in response.data
 
 
 def test_git_page(client):
@@ -43,4 +43,4 @@ def test_python_page(client):
     """This makes the ci/cd page"""
     response = client.get("/python")
     assert response.status_code == 200
-    assert b"Pyhton" in response.data
+    assert b"Let's take a closer look to Python" in response.data
