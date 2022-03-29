@@ -26,10 +26,14 @@
             <nav class="navbar navbar-light bg-dark fixed-top">
                 <div class="container-fluid ">
                     <a class="nav-link" aria-current="page" href="/" style="color: white;">Home</a>
-                    <a class="nav-link active" aria-current="page" href="/docker">Docker</a>
+                    <a class="nav-link" aria-current="page" href="/docker" style="color: white;">Docker</a>
                     <a class="nav-link" aria-current="page" href="/python" style="color: white;">Python</a>
                     <a class="nav-link" aria-current="page" href="/html1" style="color: white;">CI/CD</a>
                     <a class="nav-link" aria-current="page" href="/git" style="color: white;">Git</a>
+                    <a class="nav-link active" aria-current="page" href="/oop">OOPS</a>
+                    <a class="nav-link" aria-current="page" href="/pylint" style="color: white;">Pylint</a>
+                    <a class="nav-link" aria-current="page" href="/solid" style="color: white;">SOLID</a>
+                    <a class="nav-link" aria-current="page" href="/aaa" style="color: white;">AAA</a>
                 </div>
             </nav>
         </header>
@@ -46,8 +50,8 @@
                 entities like objects, hiding, inheritance, etc in programming. It makes visualization easier because it
                 is close to real-world scenarios.</p>
             <p>
-            <img src="{{ url_for('static', filename='/images/java-oops.png') }}"
-                 class="d-block" style="height: 380px; width: 575px; margin-left: auto;
+                <img src="{{ url_for('static', filename='/images/java-oops.png') }}"
+                     class="d-block" style="height: 380px; width: 575px; margin-left: auto;
   margin-right: auto;"/></p>
             <h3 class="mt-5" style="text-align: center">Some Fundamental Concepts of OOP</h3>
             <div class="row">
@@ -109,7 +113,7 @@ print(divya.legs)</pre>
                     <p style="font-size: 20px;">In this, methods, Python converts data type into another data type
                         automatically. In this process, users don’t have to involve in this process.<br>
 
-                            <pre class="code" style="font-size: 20px; background-color: black; color: white;"># a to int
+                    <pre class="code" style="font-size: 20px; background-color: black; color: white;"># a to int
 a = 7
 print(type(a))</pre>
 
@@ -198,11 +202,11 @@ print(obj.mileage)</pre>
                          class="d-block" style="height: 410px;width: 450px;"/>
 
 
-                     <h3 class="mt-5">Polymorphism </h3>
+                    <h3 class="mt-5">Polymorphism </h3>
                     <img src="{{ url_for('static', filename='/images/poly.jpeg') }}"
                          class="d-block" style="height: 410px;width: 450px;"/>
 
-                     <h3 class="mt-5">Encapsulation </h3>
+                    <h3 class="mt-5">Encapsulation </h3>
                     <img src="{{ url_for('static', filename='/images/en.jpeg') }}"
                          class="d-block" style="height: 410px;width: 450px;"/>
 
@@ -218,18 +222,18 @@ print(obj.mileage)</pre>
         </div>
     </div>
 
-        <footer class="bg-light text-center">
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 20px;">
-                © 2022 Copyright:DIVYA GABANI
-            </div>
-        </footer>
-        <!-- Optional JavaScript; choose one of the two! -->
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                crossorigin="anonymous"></script>
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <footer class="bg-light text-center">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 20px;">
+            © 2022 Copyright:DIVYA GABANI
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
