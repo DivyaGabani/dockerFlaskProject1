@@ -34,17 +34,17 @@ def test_calculation_subtract_get_result_method():
     """Testing the Calculator Subtract"""
     tuple_list = (1, 2)
     calculation = Subtraction.create(tuple_list)
-    assert calculation.get_result() == -3
+    assert calculation.get_result() == -1
 
 
 def test_calculation_multiply_get_result_method():
-    """Testing the Calculator Subtract"""
+    """Testing the Calculator Multiplication"""
     tuple_list = (1, 2)
     calculation = Multiplication.create(tuple_list)
     assert calculation.get_result() == 2
 
 def test_calculation_divide_get_result_method():
-    """Testing the Calculator Subtract"""
+    """Testing the Calculator Divison"""
     tuple_list = (1, 2)
     calculation = Divison.create(tuple_list)
-    assert calculation.get_result() == 2
+    assert calculation.get_result() == 0.5

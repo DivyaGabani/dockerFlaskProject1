@@ -26,4 +26,4 @@ def test_calculator_multiply_method():
 def test_calculator_divide_method():
     """Testing the Calculator Subtract"""
     tuple_list = (1,2)
-    assert Calculator.divison(tuple_list) == 2
+    assert Calculator.divison(tuple_list) == 0.5
