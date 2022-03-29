@@ -23,7 +23,7 @@ def test_calculation_addition_instance():
 
 
 def test_calculation_add_get_result_method():
-    """Testing the Calculator"""
+    """Testing the Calculator Addition"""
     # this is show using the calculator object add method
     tuple_list = (1, 2)
     calculation = Addition.create(tuple_list)
@@ -34,7 +34,7 @@ def test_calculation_subtract_get_result_method():
     """Testing the Calculator Subtract"""
     tuple_list = (1, 2)
     calculation = Subtraction.create(tuple_list)
-    assert calculation.get_result() == -1
+    assert calculation.get_result() == -3
 
 
 def test_calculation_multiply_get_result_method():
